@@ -1,0 +1,88 @@
+<div class="container">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add Product</h3>
+    </div>
+    <div class="panel-body">
+
+      <form action="designer-finish.html" class="form-horizontal" role="form" [formGroup]="productForm">
+
+        <div class="form-group">
+          <label for="name" class="col-sm-3 control-label mb-1 mt-3">Category</label>
+          <div class="col-sm-9">
+            <label class="radio-inline me-3">
+              <input type="radio" name="Category" id="inlineRadio1" formControlName="Category" value="Fruits"> Fruits
+            </label>
+            <label class="radio-inline me-3">
+              <input type="radio" name="Category" id="inlineRadio2" formControlName="Category" value="Vegetables"> Vegetables
+            </label>
+          </div>
+        </div> <!-- form-group // -->
+
+        <div class="form-group">
+          <label for="name" class="col-sm-3 control-label mb-1 mt-3">Name</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="name" id="name" formControlName="name" placeholder="Product Name">
+          </div>
+        </div> <!-- form-group // -->
+        <div class="form-group">
+          <label for="name" class="col-sm-3 control-label mb-1 mt-3">Image Url</label>
+          <div class="col-sm-9">
+            <input type="text" class="form-control" name="name" id="name"  formControlName="imgUrl" placeholder="Image Url Link">
+          </div>
+        </div> <!-- form-group // -->
+        <div class="form-group">
+          <label for="about" class="col-sm-3 control-label mb-1 mt-3">description</label>
+          <div class="col-sm-9">
+            <textarea class="form-control" formControlName="description"></textarea>
+          </div>
+        </div> <!-- form-group // -->
+        <div class="form-group">
+          <label for="qty" class="col-sm-3 control-label mb-1 mt-3">price</label>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" name="qty" id="qty" placeholder="price" formControlName="price">
+          </div>
+        </div> <!-- form-group // -->
+        <div class="form-group">
+          <label for="qty" class="col-sm-3 control-label mb-1 mt-3">Rate</label>
+          <div class="col-sm-3">
+            <input type="number" class="form-control" name="qty" id="qty" max="5" min="0" placeholder="Rate" formControlName="rate">
+          </div>
+        </div> <!-- form-group // -->
+        <div class="form-group">
+          <label for="qty" class="col-sm-3 control-label mb-1 mt-3">Options</label>
+          <div class="col-sm-1">
+            <input type="checkbox" name="Options" id="Expired" class="me-3" formControlName="Expired">
+            <label for="Expired">Expired</label>
+          </div>
+          <div class="col-sm-1">
+            <input type="checkbox" name="Options" id="Discount" class="me-3" formControlName="Discount">
+            <label for="Discount">Discount</label>
+          </div>
+          <div class="col-sm-1">
+            <input type="checkbox" name="Options" id="Sales" class="me-3" formControlName="Sales">
+            <label for="Sales">Sales</label>
+          </div>
+          <div class="col-sm-1">
+            <input type="checkbox" name="Options" id="Fresh" class="me-3" formControlName="Fresh">
+            <label for="Fresh">Fresh</label>
+          </div>
+          <div class="col-sm-1">
+            <input type="checkbox" name="Options" id="Organic" class="me-3" formControlName="Organic">
+            <label for="Organic">Organic</label>
+          </div>
+        </div> <!-- form-group // -->
+        <hr>
+        <div class="form-group">
+          <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit" class="btn btn-primary" (click)="addProduct()">Add Product</button>
+          </div>
+        </div> <!-- form-group // -->
+      </form>
+
+    </div><!-- panel-body // -->
+  </section><!-- panel// -->
+
+
+</div> <!-- container// -->

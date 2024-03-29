@@ -1,0 +1,27 @@
+
+<div class="text-center h1">
+  products
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th scope="col">Image</th>
+      <th scope="col">Name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of ProductsData">
+      <td data-label="Account"><img [src]="item.imgUrl" class="img-fluid" style="height: 100px;" alt=""></td>
+      <td data-label="Due Date">{{item.name}}</td>
+      <td data-label="Amount">{{item.Category}}</td>
+      <td data-label="Period" class="actions">
+        <i class="fa-regular fa-eye" title="Show" [routerLink]="['/admin/show-product' , item.id]"></i>
+        <i class="fa-regular fa-pen-to-square" title="Edit" [routerLink]="['/admin/edit-product' , item.id]"></i>
+        <i class="fa-regular fa-trash-can" title="Delete" (click)="deleteProduct(item.id)"></i>
+      </td>
+    </tr>
+  </tbody>
+</table>

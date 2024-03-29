@@ -1,0 +1,74 @@
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg admin-navbar sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand hidden-sm hidden-md hidden-lg" routerLink="admin">Admin</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#admin-nav-drop"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse ms-5" id="admin-nav-drop">
+      <ul class="navbar-nav admin-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="admin"><i class="fa fa-tachometer" aria-hidden="true"></i> Dashboard</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i
+              class="fa fa-files-o" aria-hidden="true"></i> Manage</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="products">products</a></li>
+            <li><a class="dropdown-item" >Files</a></li>
+            <li><a class="dropdown-item" >Pages</a></li>
+            <li><a class="dropdown-item" >Menus</a></li>
+            <li><a class="dropdown-item">Forms</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i
+              class="fa fa-plus" aria-hidden="true"></i> New</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="add-product">Product</a></li>
+            <li><a class="dropdown-item" >Page</a></li>
+            <li><a class="dropdown-item" >Menu</a></li>
+            <li><a class="dropdown-item" >Form</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link"><i class="fa fa-pencil"
+              aria-hidden="true"></i> Edit Page</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false"><i
+              class="fa fa-line-chart" aria-hidden="true"></i> Activity</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">MLS Updated</li>
+            <li class="dropdown-body">11-10-2018 3:32pm</li>
+            <li class="dropdown-header">Today</li>
+            <li class="dropdown-body">Users Online <span class="badge">2</span></li>
+            <li class="dropdown-body">New Leads <span class="badge">1</span></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  role="button" aria-expanded="false"><i
+              class="fa fa-cogs" aria-hidden="true"></i> Sitewide</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item">Settings</a></li>
+          </ul>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-right">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button"
+            aria-expanded="false">Hello, Mostafa Labib <i class="fa fa-user-circle-o" aria-hidden="true"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="logOut()">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>

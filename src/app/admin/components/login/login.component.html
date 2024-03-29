@@ -1,0 +1,23 @@
+<div class="login-box">
+  <h2>Login</h2>
+  <form>
+    <div class="user-box">
+      <input type="email" [formControl]="email" required="">
+      <label [ngClass]="email.touched ? 'touched' : '' ">Email</label>
+    </div>
+    <div class="user-box">
+      <input type="password" [formControl]="password" required="">
+      <label>Password</label>
+    </div>
+    <div *ngIf="massage.length" class="alert alert-danger">
+      {{massage}}
+    </div>
+    <button (click)="login()">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Submit
+    </button>
+  </form>
+</div>

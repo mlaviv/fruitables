@@ -1,0 +1,110 @@
+.admin-navbar {
+  border-radius: 0;
+  margin: 0;
+  min-height: 20px;
+  max-height: 50px;
+  border: 0;
+  background-color: black !important;
+}
+
+.admin-navbar .navbar-nav>li>a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #eee
+}
+
+.admin-navbar .navbar-nav>li>a:hover {
+  background: #32373c;
+  color: #0baf4d
+}
+
+.admin-navbar.navbar-inverse .navbar-nav>.open>a,
+.admin-navbar.navbar-inverse .navbar-nav>.open>a:focus,
+.admin-navbar.navbar-inverse .navbar-nav>.open>a:hover {
+  background: #32373c;
+  color: #0baf4d
+}
+
+.admin-navbar .dropdown.open .dropdown-menu {
+  background: #32373c;
+  border-color: #32373c;
+  border-radius: 0;
+}
+
+.admin-navbar .dropdown.open .dropdown-menu>li>a {
+  color: #eee;
+  background: none
+}
+
+.admin-navbar .dropdown.open .dropdown-menu>li>a:hover {
+  background: none;
+  color: #0baf4d
+}
+
+@media (min-width: 768px) {
+  .admin-nav {
+    margin-left: -15px
+  }
+}
+
+.dropdown-header {
+  color: #0baf4d;
+}
+
+.dropdown-body {
+  display: block;
+  padding: 3px 20px;
+  line-height: 1.42857143;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.dropdown-submenu {
+  position: relative
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff
+}
+
+.dropdown-submenu.pull-left {
+  float: none
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px
+}
